@@ -1,0 +1,114 @@
+### 🚀 **React Practice Tasks (Components & Props)**  
+
+Here are some hands-on tasks to solidify your understanding of **functional components, props, and conditional rendering**.  
+
+---
+
+## **📝 Task 1: Create a "UserCard" Component**
+🔹 **Requirements:**  
+✅ Create a `UserCard` component that accepts `name`, `age`, and `location` as **props** and displays them.  
+
+🔹 **Example Output:**  
+```jsx
+<UserCard name="Rohit" age={25} location="Mumbai" />
+```
+🟢 Expected Output:  
+```
+Name: Rohit
+Age: 25
+Location: Mumbai
+```
+---
+
+## **📝 Task 2: Display a Welcome Message with Props**
+🔹 **Requirements:**  
+✅ Create a `WelcomeMessage` component.  
+✅ Pass a **`username`** as a prop and display:  
+   - "Welcome, [username]! 🎉" if a username is provided.  
+   - "Welcome, Guest! 👋" if no username is provided.  
+
+🔹 **Example Usage:**  
+```jsx
+<WelcomeMessage username="Rohit" />
+<WelcomeMessage />
+```
+---
+
+## **📝 Task 3: Conditional Rendering – Show Login Button**
+🔹 **Requirements:**  
+✅ Create a `UserStatus` component.  
+✅ Accept a prop `isLoggedIn`.  
+✅ If `isLoggedIn` is `true`, show **"Welcome back!"**  
+✅ If `isLoggedIn` is `false`, show a **"Login" button**.  
+
+🔹 **Example Usage:**  
+```jsx
+<UserStatus isLoggedIn={true} />   // Shows: "Welcome back!"
+<UserStatus isLoggedIn={false} />  // Shows: [Login Button]
+```
+---
+
+## **📝 Task 4: Show Product List using Props**  
+🔹 **Requirements:**  
+✅ Create a `Product` component that accepts `name`, `price`, and `inStock` as **props**.  
+✅ Display the product details and:  
+   - If `inStock` is `true`, show "🟢 Available".  
+   - If `inStock` is `false`, show "🔴 Out of Stock".  
+
+🔹 **Example Usage:**  
+```jsx
+<Product name="iPhone 14" price={999} inStock={true} />
+<Product name="MacBook Pro" price={1999} inStock={false} />
+```
+🟢 Expected Output:  
+```
+Product: iPhone 14
+Price: $999
+Status: 🟢 Available
+
+Product: MacBook Pro
+Price: $1999
+Status: 🔴 Out of Stock
+```
+---
+
+## **📝 Task 5: Dynamic Theme Button**  
+🔹 **Requirements:**  
+✅ Create a `ThemeButton` component.  
+✅ Accept a prop `isDarkMode`.  
+✅ If `isDarkMode` is `true`, display **"🌙 Dark Mode"**.  
+✅ If `isDarkMode` is `false`, display **"☀️ Light Mode"**.  
+
+🔹 **Example Usage:**  
+```jsx
+<ThemeButton isDarkMode={true} />  // Shows: "🌙 Dark Mode"
+<ThemeButton isDarkMode={false} /> // Shows: "☀️ Light Mode"
+```
+---
+
+## **Bonus Challenge 💪: Create a Profile Card Component**
+🔹 **Requirements:**  
+✅ Create a `ProfileCard` component that accepts `name`, `bio`, and `isOnline` as props.  
+✅ Display the **user's name, bio, and online status**:  
+   - If `isOnline` is `true`, show **🟢 Online**.  
+   - If `isOnline` is `false`, show **🔴 Offline**.  
+
+🔹 **Example Usage:**  
+```jsx
+<ProfileCard name="John Doe" bio="Web Developer" isOnline={true} />
+<ProfileCard name="Jane Smith" bio="UI/UX Designer" isOnline={false} />
+```
+🟢 Expected Output:  
+```
+John Doe
+Web Developer
+Status: 🟢 Online
+
+Jane Smith
+UI/UX Designer
+Status: 🔴 Offline
+```
+---
+
+### **🔥 Ready? Start Coding! 🚀**
+Try these out and let me know if you need help! 🎯💻

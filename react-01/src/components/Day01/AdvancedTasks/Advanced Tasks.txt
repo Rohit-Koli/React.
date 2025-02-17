@@ -1,0 +1,163 @@
+   🚀   Advanced React Practice Tasks (Components & Props)    
+
+Here are some more challenging tasks that will push your understanding of   components, props, and conditional rendering   to the next level.  
+
+---
+
+📝 Task 1: Create a "Notification" Component    
+🔹   Requirements:    
+✅ Accept `message`, `type` (success, error, warning), and `timestamp` as props.  
+✅ Display the notification with different styles based on the `type`.  
+
+🔹   Expected Output Format:    
+  
+✅ Success: Data saved successfully! - [12:30 PM]
+⚠️ Warning: Low disk space! - [12:35 PM]
+❌ Error: Failed to load data! - [12:40 PM]
+  
+---
+
+     📝 Task 2: Show a List of Users    
+🔹   Requirements:    
+✅ Accept an array of users (each user has `name`, `email`, `isAdmin`).  
+✅ Loop through the array and display user details.  
+✅ If `isAdmin` is `true`, add `(Admin)` next to the name.  
+
+🔹   Expected Output Format:    
+  
+1. Rohit - rohit@example.com (Admin)
+2. John - john@example.com
+3. Sarah - sarah@example.com (Admin)
+4. Emma - emma@example.com
+  
+---
+
+     📝 Task 3: Pricing Plan Component    
+🔹   Requirements:    
+✅ Accept `planName`, `price`, and `features` (array).  
+✅ Display the plan name and price.  
+✅ Show all the features as a list.  
+
+🔹   Expected Output Format:    
+  
+🌟 Premium Plan - $29.99/month
+Features:
+✅ Unlimited storage
+✅ Priority support
+✅ Custom branding
+
+💼 Business Plan - $19.99/month
+Features:
+✅ 500GB storage
+✅ Email support
+✅ Analytics dashboard
+  
+---
+
+     📝 Task 4: Task List with Status    
+🔹   Requirements:    
+✅ Accept an array of tasks (`title`, `completed`).  
+✅ Display tasks as a list with a   checkbox   next to completed tasks.  
+
+🔹   Expected Output Format:    
+  
+☑️ Finish React project
+☑️ Submit assignment
+⬜ Buy groceries
+⬜ Workout
+  
+---
+
+     📝 Task 5: Dynamic Weather Card    
+🔹   Requirements:    
+✅ Accept `city`, `temperature`, `condition` (Sunny, Rainy, Cloudy).  
+✅ Change the emoji/icon based on `condition`.  
+
+🔹   Expected Output Format:    
+  
+📍 Mumbai
+🌞 32°C - Sunny
+
+📍 New York
+🌧️ 18°C - Rainy
+
+📍 London
+☁️ 12°C - Cloudy
+  
+---
+
+     📝 Task 6: Product Review System    
+🔹   Requirements:    
+✅ Accept `productName`, `rating` (1-5 stars), and `review`.  
+✅ Show the product name, stars (⭐), and review text.  
+
+🔹   Expected Output Format:    
+  
+📦 iPhone 14
+⭐️⭐️⭐️⭐️⭐️ - Excellent phone with great camera!
+
+📦 MacBook Pro
+⭐️⭐️⭐️⭐️ - Powerful but expensive.
+
+📦 Headphones
+⭐️⭐️⭐️ - Decent sound quality, but uncomfortable.
+  
+---
+
+     📝 Task 7: Movie Rating System    
+🔹   Requirements:    
+✅ Accept `movieName`, `rating` (1-10), and `genre`.  
+✅ Display movie details and show   "🔥 Highly Rated"   if `rating > 8`.  
+
+🔹   Expected Output Format:    
+  
+🎬 Inception - 9/10 (Sci-Fi) 🔥 Highly Rated
+🎬 Titanic - 8/10 (Romance)
+🎬 Joker - 9.5/10 (Drama) 🔥 Highly Rated
+  
+---
+
+     📝 Task 8: Dynamic Progress Bar    
+🔹   Requirements:    
+✅ Accept `taskName`, `progress` (0-100%).  
+✅ Show the task name and a progress bar with percentage.  
+
+🔹   Expected Output Format:    
+  
+📊 Learning React [███████---] 70%
+📊 Writing Blog Post [█████------] 50%
+📊 Completing Assignments [██████████] 100% ✅ Done!
+  
+---
+
+     📝 Task 9: Shopping Cart Summary    
+🔹   Requirements:    
+✅ Accept an array of products (`name`, `price`, `quantity`).  
+✅ Display each item with its total price and show the   grand total  .  
+
+🔹   Expected Output Format:    
+  
+🛒 Shopping Cart
+1. iPhone 14 - $999 x 2 = $1998
+2. MacBook Pro - $1999 x 1 = $1999
+3. AirPods - $199 x 3 = $597
+
+💰 Grand Total: $4594
+  
+---
+
+     📝 Task 10: Dynamic Event Countdown    
+🔹   Requirements:    
+✅ Accept `eventName` and `daysLeft`.  
+✅ If `daysLeft` is 0, show   "🎉 Happening Today!"  .  
+
+🔹   Expected Output Format:    
+  
+🎂 Birthday Party - 5 days left
+🎓 Graduation Ceremony - 10 days left
+🎉 New Year Celebration - Happening Today!
+  
+---
+
+     🔥 Challenge: Build These in React!  
+Try implementing these tasks using   functional components, props, and conditional rendering  . If you get stuck, feel free to ask! 🚀😊
