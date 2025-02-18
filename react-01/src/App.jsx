@@ -13,6 +13,9 @@ import UserDetails from "./components/Day01/AdvancedTasks/UserDetails"
 import PricingPlan from "./components/Day01/AdvancedTasks/PricingPlan"
 import TaskList from "./components/Day01/TaskList"
 import DynamicWeatherCard from "./components/Day01/AdvancedTasks/DynamicWeatherCard"
+import ProductReviewComponent from "./components/Day01/AdvancedTasks/ProductReviewComponent"
+import MovieRatingComponent from "./components/Day01/AdvancedTasks/MovieRatingComponent"
+import ShoppingCard from "./components/Day01/AdvancedTasks/ShoppingCard"
 
 let usersData = [
   { name: "Rohit", email: "rohit@example.com", isAdmin: true },
@@ -32,6 +35,12 @@ let taskList=[
 ]
 
 let weatherCondition=["Sunny","Rainy","Cloudy"]
+
+let shopingItemsList=[
+  {name:"iPhone 14",price:999 ,quantity:2},
+  {name:"MacBook Pro",price:1999 ,quantity:1},
+  {name:"AirPods",price:199 ,quantity:3},
+]
 
 function App() {
 
@@ -61,11 +70,22 @@ function App() {
       {/* <PricingPlan planName={"Premium Plan"} price={29.99} fetures={features[0]} /> */}
 
       {/* <TaskList tasks={taskList}/> */}
-      <DynamicWeatherCard city={"Mumbai"} conditions={weatherCondition[0]} temprature={32}/>
-      <DynamicWeatherCard city={"Delhi"} conditions={weatherCondition[2]} temprature={26}/>
-      <DynamicWeatherCard city={"Shirpur"} conditions={weatherCondition[1]} temprature={18}/>
+      {/* <DynamicWeatherCard city={"Mumbai"} conditions={weatherCondition[0]} temprature={32}/> */}
+      {/* <DynamicWeatherCard city={"Delhi"} conditions={weatherCondition[2]} temprature={26}/> */}
+      {/* <DynamicWeatherCard city={"Shirpur"} conditions={weatherCondition[1]} temprature={18}/> */}
+      {/* <ProductReviewComponent productName={"IPHONE 15"} rating={4} review={"Good Electronic Device "}/> */}
+      {/* <ProductReviewComponent productName={"IPHONE 14"} rating={5} review={"Good Electronic Device "}/> */}
+      {/* <ProductReviewComponent productName={"IPHONE 13"} rating={1} review={"Good Electronic Device "}/> */}
+      {/* <ProductReviewComponent productName={"IPHONE 12"} rating={2} review={"Good Electronic Device4"}/> */}
+      {/* <ProductReviewComponent productName={"IPHONE X"} rating={3} review={"Good Electronic Device4"}/> */}
+      {/* <MovieRatingComponent movieName={"Inception"} rating={9} genre={"Sci-Fi"}/> */}
+      {/* <MovieRatingComponent movieName={"Titanic"} rating={8} genre={"Romance"}/> */}
+      {/* <MovieRatingComponent movieName={"Joker"} rating={9.5} genre={"Drama"}/> */}
+      {/* <ShoppingCard shoppingItemsList={shopingItemsList}/> */}
+      {/* Day 01 All Tasks Completed !!! */}
 
-
+      {/* Day 02 Tasks : */}
+      
 
     </>
   )

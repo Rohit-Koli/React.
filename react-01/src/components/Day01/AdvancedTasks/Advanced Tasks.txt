@@ -137,7 +137,7 @@ Features:
 
 🔹   Expected Output Format:    
   
-🛒 Shopping Cart
+ 
 1. iPhone 14 - $999 x 2 = $1998
 2. MacBook Pro - $1999 x 1 = $1999
 3. AirPods - $199 x 3 = $597
