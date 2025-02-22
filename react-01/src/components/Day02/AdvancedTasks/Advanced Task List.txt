@@ -1,0 +1,79 @@
+Here are some advanced React tasks focusing on state management, events, and hooks:  
+
+---
+
+🚀 Advanced React Tasks (State & Events)
+1️⃣ Counter with Step & Limit
+✅ Create a counter that:  
+   - Increases/decreases by a custom step value (e.g., 2, 5, 10).  
+   - Has a minimum and maximum limit (e.g., 0 to 100).  
+
+---
+2️⃣ Dynamic To-Do List
+✅ Build a To-Do app where:  
+   - Users can add tasks using an input field.  
+   - Each task can be marked as completed or deleted.  
+   - Display a count of pending/completed tasks.  
+
+---
+
+3️⃣ Form with Validation & Error Messages
+✅ Create a Login Form that:  
+   - Validates email format and password length (min 6 characters).  
+   - Shows error messages when validation fails.  
+   - Displays `"Login successful"` after form submission if valid.  
+
+---
+
+4️⃣ Light & Dark Theme Toggle (Using `useState`)
+✅ Implement a theme toggle:  
+   - Switch between light mode & dark mode.  
+   - Save the user’s preference using localStorage.  
+
+---
+
+5️⃣ Fetch API Data & Display Users (`useEffect`)
+✅ Fetch user data from an API (e.g., `https://jsonplaceholder.typicode.com/users`).  
+✅ Display the user list in a table or cards.  
+✅ Show a loading spinner while data is fetching.  
+
+---
+
+6️⃣ Real-time Character Counter for Textarea
+✅ Create a live character counter that:  
+   - Displays remaining characters (max 200).  
+   - Shows a warning when the limit is close.  
+
+---
+
+7️⃣ Shopping Cart System
+✅ Implement a mini shopping cart:  
+   - List of products with an "Add to Cart" button.  
+   - A cart section that updates dynamically.  
+   - Calculate total price of selected items.  
+
+---
+
+8️⃣ Image Preview Before Upload
+✅ Create a file upload preview system:  
+   - When a user selects an image, show a preview before upload.  
+   - Allow users to remove the selected image.  
+
+---
+
+9️⃣ Real-time Search with Filtering
+✅ Build a search bar that filters a list of items in real-time.  
+✅ Example: Search for a user in a large dataset.  
+
+---
+
+🔟 Dynamic Form with Multiple Inputs
+✅ Create a form where users can:  
+   - Add multiple input fields dynamically (e.g., multiple phone numbers).  
+   - Remove input fields when needed.  
+
+---
+
+🔥 Bonus: Convert any of these projects into a fully responsive UI using Tailwind CSS or Bootstrap!  
+
+Let me know if you want solutions or hints! 🚀😊

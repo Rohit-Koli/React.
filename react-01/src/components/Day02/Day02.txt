@@ -1,0 +1,126 @@
+🎯 Understanding State & Events in React  
+
+In React, state allows components to store and manage data dynamically, while events handle 
+user interactions like clicks, typing, and form submissions.
+---
+
+ ✅ 1. useState for State Management
+useState is a React Hook that lets you add state to functional components.
+
+ Example: Counter using useState
+
+import { useState } from "react";
+
+const Counter = () => {
+  const [count, setCount] = useState(0); // State variable with initial value 0
+
+  return (
+    <div>
+      <h2>Count: {count}</h2>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+    </div>
+  );
+};
+
+export default Counter;
+
+We mostly use const with useState and other hooks because:
+
+State Variables Don't Need Reassignment:
+    useState returns an array [state, setState], and we update the state using setState, not by reassigning the variable.
+    If we used let, it wouldn't help because reassigning count (count = 5) wouldn't trigger a re-render.
+
+Hooks Should Not Be Mutated:
+    React hooks (useEffect, useRef, etc.) should not be reassigned because they need to remain the same reference
+    across renders.
+    
+Using let or var with hooks is unnecessary and can cause unintended issues
+
+🔹 How it works?  
+- useState(0) initializes the state variable count with 0.  
+- setCount(count + 1) updates the state when the button is clicked.  
+
+---
+
+ ✅ 2. Handling Events (onClick, onChange, onSubmit)
+
+ 🔹 Handling onClick Event
+
+const ButtonClick = () => {
+  const handleClick = () => {
+    alert("Button Clicked!");
+  };
+
+  return <button onClick={handleClick}>Click Me</button>;
+};
+
+export default ButtonClick;
+
+🛠 Explanation:  
+- The onClick event fires when the button is clicked.  
+- handleClick function shows an alert message.  
+
+---
+
+ 🔹 Handling onChange Event (Input Field)
+
+import { useState } from "react";
+
+const InputField = () => {
+  const [text, setText] = useState("");
+
+  return (
+    <div>
+      <input type="text" value={text} onChange={(e) => setText(e.target.value)} />
+      <p>Typed: {text}</p>
+    </div>
+  );
+};
+
+export default InputField;
+
+🛠 Explanation:  
+- The onChange event updates the text state whenever the user types in the input field.  
+
+---
+
+ 🔹 Handling onSubmit Event (Form Submission)
+
+import { useState } from "react";
+
+const FormSubmit = () => {
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Prevents page reload
+    alert(Submitted Email: ${email});
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <input
+        type="email"
+        placeholder="Enter email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+      />
+      <button type="submit">Submit</button>
+    </form>
+  );
+};
+
+export default FormSubmit;
+
+🛠 Explanation:  
+- The onSubmit event fires when the form is submitted.  
+- e.preventDefault() stops the default page reload behavior.  
+- The entered email is shown in an alert.  
+
+---
+
+ 🎯 Final Practice Tasks
+✅ Create a toggle button that switches between "ON" and "OFF".  
+✅ Build a text counter that shows the number of characters typed in an input field.  
+✅ Create a login form with email & password validation using onSubmit.  
+
+Let me know if you need any help! 🚀😊

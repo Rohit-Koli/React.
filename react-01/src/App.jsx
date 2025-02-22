@@ -16,6 +16,17 @@ import DynamicWeatherCard from "./components/Day01/AdvancedTasks/DynamicWeatherC
 import ProductReviewComponent from "./components/Day01/AdvancedTasks/ProductReviewComponent"
 import MovieRatingComponent from "./components/Day01/AdvancedTasks/MovieRatingComponent"
 import ShoppingCard from "./components/Day01/AdvancedTasks/ShoppingCard"
+import Counter from "./components/Day02/Counter"
+import ButtonClick from "./components/Day02/ButtonClick"
+// import InputField from "./components/Day02/InputField"
+import FormSubmit from "./components/Day02/FormSubmit"
+import InputField from "./components/Day02/InputField"
+import ToggleButton from "./components/Day02/ToggleButton"
+import TextCounter from "./components/Day02/TextCounter"
+import LoginForm from "./components/Day02/LoginForm"
+import AdvancedCounter from "./components/Day02/AdvancedTasks/AdvancedCounter"
+import FormValidation from "./components/Day02/AdvancedTasks/FormValidation"
+import RealTimeCharacterCounter from "./components/Day02/AdvancedTasks/RealTimeCharacterCounter"
 
 let usersData = [
   { name: "Rohit", email: "rohit@example.com", isAdmin: true },
@@ -84,9 +95,18 @@ function App() {
       {/* <ShoppingCard shoppingItemsList={shopingItemsList}/> */}
       {/* Day 01 All Tasks Completed !!! */}
 
-      {/* Day 02 Tasks : */}
+      {/* Day 02 */}
+      {/* <Counter /> */}
+      {/* <ButtonClick /> */}
+      {/* <InputField /> */}
+      {/* <FormSubmit /> */}
+      {/* <ToggleButton /> */}
+      {/* <TextCounter /> */}
+      {/* <LoginForm /> */}
+      {/* <AdvancedCounter /> */}
+      {/* <FormValidation /> */}
+      {/* <RealTimeCharacterCounter /> */}
       
-
     </>
   )
 }

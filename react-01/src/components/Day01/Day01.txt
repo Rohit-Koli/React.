@@ -1,3 +1,72 @@
+In React, functional components and class components are two ways to create components, but functional components are now preferred due to hooks.
+
+ Functional Components
+- Definition: Simple JavaScript functions that return .
+- State & Lifecycle: Uses hooks (useState, useEffect) for state and lifecycle methods.
+- Performance: More optimized due to no need for this and automatic optimizations.
+- Syntax:
+  
+  function Greeting(props) {
+    return <h1>Hello, {props.name}!</h1>;
+  }
+  
+
+ Class Components
+- Definition: ES6 classes that extend React.Component.
+- State & Lifecycle: Uses this.state and lifecycle methods (componentDidMount, componentDidUpdate).
+- Performance: Slightly less optimized due to this keyword and more complex structure.
+- Syntax:
+  
+  class Greeting extends React.Component {
+    render() {
+      return <h1>Hello, {this.props.name}!</h1>;
+    }
+  }
+  
+
+Which One to Use?
+- Use functional components since React introduced hooks in v16.8, making them more readable, performant, and easier to manage.
+- Class components are still valid but mostly used in legacy projects.
+
+Would you like a comparison with lifecycle methods in both? 🚀
+
+Props :
+    2️⃣ Passing & Receiving Props
+    Props are used to send data from parent to child components.
+    import React from 'react';
+    import Welcome from './Welcome';
+
+    function App() {
+    return (
+        <div>
+        <Welcome name="Rohit" age={25} />
+        </div>
+    );
+    }
+
+export default App;
+
+
+    ✅ Example: Receiving Props in Functional Component
+    
+    import React from 'react';
+
+    const Welcome = (props) => {
+    return <h1>Welcome, {props.name}! You are {props.age} years old.</h1>;
+    };
+
+    export default Welcome;
+
+    🟢 Props are read-only (they cannot be modified inside the component).
+
+    ✅ Example: Receiving Props using Destructuring
+    Instead of props.name, you can use destructuring:
+
+    const Welcome = ({ name, age }) => {
+    return <h1>Welcome, {name}! You are {age} years old.</h1>;
+    };
+    ✅ Cleaner and more readable syntax.
+
 ### 🚀 **React Practice Tasks (Components & Props)**  
 
 Here are some hands-on tasks to solidify your understanding of **functional components, props, and conditional rendering**.  
