@@ -1,0 +1,53 @@
+The `useContext` hook in React is used to access values from a React Context without 
+needing to pass props manually at every level of the component tree. It simplifies state
+sharing between deeply nested components.
+
+### **How it Works**
+1. **Create a Context** using `React.createContext()`.
+2. **Provide the Context** value using a `Provider` component.
+3. **Consume the Context** using the `useContext` hook in any component.
+
+---
+
+### **Example: Using `useContext` Hook**
+```jsx
+import React, { createContext, useContext } from "react";
+
+// Step 1: Create a Context
+const UserContext = createContext();
+
+const UserProvider = ({ children }) => {
+  const user = { name: "Rohit", age: 22 }; // Example shared state
+  return <UserContext.Provider value={user}>{children}</UserContext.Provider>;
+};
+
+const UserProfile = () => {
+  // Step 3: Consume Context
+  const user = useContext(UserContext);
+  return (
+    <div>
+      <h2>User Profile</h2>
+      <p>Name: {user.name}</p>
+      <p>Age: {user.age}</p>
+    </div>
+  );
+};
+
+const App = () => {
+  return (
+    // Step 2: Provide Context
+    <UserProvider>
+      <UserProfile />
+    </UserProvider>
+  );
+};
+
+export default App;
+```
+
+### **Explanation**
+1. **CreateContext**: `UserContext` is created.
+2. **Provider**: `UserProvider` wraps components and provides `user` data.
+3. **Consumer**: `useContext(UserContext)` retrieves `user` data inside `UserProfile`.
+
+This makes data accessible anywhere in the component tree without prop drilling! 🚀

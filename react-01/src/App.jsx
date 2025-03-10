@@ -27,6 +27,12 @@ import LoginForm from "./components/Day02/LoginForm"
 import AdvancedCounter from "./components/Day02/AdvancedTasks/AdvancedCounter"
 import FormValidation from "./components/Day02/AdvancedTasks/FormValidation"
 import RealTimeCharacterCounter from "./components/Day02/AdvancedTasks/RealTimeCharacterCounter"
+import UseEffectDemo from "./components/Day03-Hooks/UseEffectDemo"
+import { useContext } from "react"
+import Kitchen from "./components/Day03-Hooks/UseContextHook/Kitchen"
+import ItemPortal from "./components/Day03-Hooks/UseContextHook/ItemPortal"
+import NameContext from "./components/Day03-Hooks/UseContextHook/NameContext"
+import RohitInfo from "./components/Day03-Hooks/UseContextHook/RohitInfo"
 
 let usersData = [
   { name: "Rohit", email: "rohit@example.com", isAdmin: true },
@@ -53,8 +59,17 @@ let shopingItemsList=[
   {name:"AirPods",price:199 ,quantity:3},
 ]
 
-function App() {
 
+function App() {
+  let items={
+    food:"Pizza",
+    drink:"Soda"
+  }
+  let rohitInfo={
+    name:"Rohit Koli",
+    age:23,
+    qualification:"MCA GRADUATE"
+  }
   return (
     <>
       {/* <FunctionComponent /> */}
@@ -107,6 +122,16 @@ function App() {
       {/* <FormValidation /> */}
       {/* <RealTimeCharacterCounter /> */}
       
+      {/* Day 03 */}
+      {/* <UseEffectDemo /> */}
+
+      {/* <ItemPortal.Provider value={items}>
+          <Kitchen />
+      </ItemPortal.Provider> */}
+
+      <NameContext.Provider value={rohitInfo}>
+        <RohitInfo />
+      </NameContext.Provider>
     </>
   )
 }

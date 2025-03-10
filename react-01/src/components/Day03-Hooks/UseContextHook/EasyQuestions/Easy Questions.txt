@@ -1,0 +1,243 @@
+Here are some **React Context API exercises** categorized into **Easy**, **Medium**, and **Hard** levels. These exercises will help you practice creating, providing, and consuming context in React.
+
+---
+
+### **Easy Exercises**
+
+#### 1. **Theme Toggle**
+Create a `ThemeContext` that holds a `theme` (e.g., `light` or `dark`). Build a component that displays the current theme and a button to toggle between `light` and `dark` themes.
+
+#### 2. **User Greeting**
+Create a `UserContext` that holds a `username`. Build a component that displays a greeting message like `Hello, {username}!`.
+
+#### 3. **Language Selector**
+Create a `LanguageContext` that holds the current language (e.g., `en` for English or `es` for Spanish). Build a component that displays a greeting message in the selected language.
+
+---
+
+### **Medium Exercises**
+
+#### 1. **Shopping Cart**
+Create a `CartContext` that holds an array of items in a shopping cart. Build a component that:
+- Displays the list of items in the cart.
+- Allows adding new items to the cart.
+- Allows removing items from the cart.
+
+#### 2. **Authentication Context**
+Create an `AuthContext` that holds a `user` object (with properties like `username` and `isLoggedIn`). Build a component that:
+- Displays a login form.
+- Updates the `AuthContext` when the user logs in or logs out.
+
+#### 3. **Notification System**
+Create a `NotificationContext` that holds an array of notifications. Build a component that:
+- Displays a list of notifications.
+- Allows adding new notifications.
+- Automatically removes notifications after a few seconds.
+
+---
+
+### **Hard Exercises**
+
+#### 1. **Multi-Step Form with Context**
+Create a `FormContext` that holds the state of a multi-step form (e.g., user details, address, payment info). Build components for each step of the form and use the context to share data between steps.
+
+#### 2. **Global State Management**
+Create a `GlobalContext` that holds multiple pieces of state (e.g., `theme`, `user`, `cart`). Build a complex app (e.g., an e-commerce site) that uses this context to manage all global state.
+
+#### 3. **Nested Contexts**
+Create two contexts: `ThemeContext` and `UserContext`. Build a component tree where some components consume `ThemeContext`, some consume `UserContext`, and some consume both. Ensure that updates to one context do not unnecessarily re-render components that only depend on the other context.
+
+---
+
+### **Examples of Context Usage**
+
+#### Example 1: Theme Toggle (Easy)
+```jsx
+// ThemeContext.js
+import React from 'react';
+const ThemeContext = React.createContext();
+export default ThemeContext;
+```
+
+```jsx
+// App.js
+import React, { useState } from 'react';
+import ThemeContext from './ThemeContext';
+import ThemeToggler from './ThemeToggler';
+
+function App() {
+  const [theme, setTheme] = useState('light');
+
+  const toggleTheme = () => {
+    setTheme(prevTheme => (prevTheme === 'light' ? 'dark' : 'light'));
+  };
+
+  return (
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+      <ThemeToggler />
+    </ThemeContext.Provider>
+  );
+}
+
+export default App;
+```
+
+```jsx
+// ThemeToggler.js
+import React, { useContext } from 'react';
+import ThemeContext from './ThemeContext';
+
+const ThemeToggler = () => {
+  const { theme, toggleTheme } = useContext(ThemeContext);
+
+  return (
+    <div>
+      <p>Current Theme: {theme}</p>
+      <button onClick={toggleTheme}>Toggle Theme</button>
+    </div>
+  );
+};
+
+export default ThemeToggler;
+```
+
+---
+
+#### Example 2: Shopping Cart (Medium)
+```jsx
+// CartContext.js
+import React from 'react';
+const CartContext = React.createContext();
+export default CartContext;
+```
+
+```jsx
+// App.js
+import React, { useState } from 'react';
+import CartContext from './CartContext';
+import Cart from './Cart';
+
+function App() {
+  const [cart, setCart] = useState([]);
+
+  const addToCart = (item) => {
+    setCart(prevCart => [...prevCart, item]);
+  };
+
+  const removeFromCart = (itemId) => {
+    setCart(prevCart => prevCart.filter(item => item.id !== itemId));
+  };
+
+  return (
+    <CartContext.Provider value={{ cart, addToCart, removeFromCart }}>
+      <Cart />
+    </CartContext.Provider>
+  );
+}
+
+export default App;
+```
+
+```jsx
+// Cart.js
+import React, { useContext } from 'react';
+import CartContext from './CartContext';
+
+const Cart = () => {
+  const { cart, addToCart, removeFromCart } = useContext(CartContext);
+
+  return (
+    <div>
+      <h2>Shopping Cart</h2>
+      <ul>
+        {cart.map(item => (
+          <li key={item.id}>
+            {item.name} - ${item.price}
+            <button onClick={() => removeFromCart(item.id)}>Remove</button>
+          </li>
+        ))}
+      </ul>
+      <button onClick={() => addToCart({ id: 1, name: 'Product 1', price: 10 })}>
+        Add Product 1
+      </button>
+    </div>
+  );
+};
+
+export default Cart;
+```
+
+---
+
+#### Example 3: Multi-Step Form (Hard)
+```jsx
+// FormContext.js
+import React from 'react';
+const FormContext = React.createContext();
+export default FormContext;
+```
+
+```jsx
+// App.js
+import React, { useState } from 'react';
+import FormContext from './FormContext';
+import Step1 from './Step1';
+import Step2 from './Step2';
+import Step3 from './Step3';
+
+function App() {
+  const [formData, setFormData] = useState({
+    userDetails: {},
+    address: {},
+    paymentInfo: {},
+  });
+
+  const updateFormData = (step, data) => {
+    setFormData(prevData => ({ ...prevData, [step]: data }));
+  };
+
+  return (
+    <FormContext.Provider value={{ formData, updateFormData }}>
+      <Step1 />
+      <Step2 />
+      <Step3 />
+    </FormContext.Provider>
+  );
+}
+
+export default App;
+```
+
+```jsx
+// Step1.js
+import React, { useContext, useState } from 'react';
+import FormContext from './FormContext';
+
+const Step1 = () => {
+  const { formData, updateFormData } = useContext(FormContext);
+  const [userDetails, setUserDetails] = useState(formData.userDetails);
+
+  const handleSubmit = () => {
+    updateFormData('userDetails', userDetails);
+  };
+
+  return (
+    <div>
+      <h2>Step 1: User Details</h2>
+      <input
+        type="text"
+        placeholder="Name"
+        value={userDetails.name || ''}
+        onChange={(e) => setUserDetails({ ...userDetails, name: e.target.value })}
+      />
+      <button onClick={handleSubmit}>Next</button>
+    </div>
+  );
+};
+
+export default Step1;
+```
+
+---
+
+These exercises will help you master the React Context API. Try solving them without looking at the examples or hints! Let me know if you need further clarification. 😊
