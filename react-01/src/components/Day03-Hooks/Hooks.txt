@@ -118,7 +118,8 @@ export default App;
 ---
 
 📌 4. useRef – Accessing & Managing DOM Elements
-Use Case: When you need to interact with DOM elements (focus, animations) or store values that don't trigger re-renders.  
+Use Case: When you need to interact with DOM elements (focus, animations) or store values that 
+don't trigger re-renders.  
 
 ✅ Example – Autofocus Input Field (useRef)  
 
@@ -181,7 +182,8 @@ export default Counter;
 ---
 
 📌 6. useMemo – Optimizing Expensive Computations
-Use Case: When a component performs an expensive calculation, and you want to avoid re-computing unless dependencies change.  
+Use Case: When a component performs an expensive calculation, and you want to avoid 
+re-computing unless dependencies change.  
 
 ✅ Example – Optimized Calculation (useMemo)  
 
@@ -242,7 +244,8 @@ export default App;
 ---
 
 📌 8. useLayoutEffect – Synchronous Side Effects
-Use Case: Like useEffect, but runs before the browser paints the screen (useful for measuring DOM elements).  
+Use Case: Like useEffect, but runs before the browser paints the screen (useful for 
+measuring DOM elements).  
 
 ✅ Example – Measuring Element Size (useLayoutEffect)  
 
@@ -265,6 +268,7 @@ const Box = () => {
 ---
 
  🚀 Conclusion
-These hooks help manage state, handle side effects, optimize performance, and interact with the DOM in React. 🎯  
+These hooks help manage state, handle side effects, optimize performance, and interact 
+with the DOM in React. 🎯  
 
 Let me know if you need practice tasks for these hooks! 😊

@@ -3,7 +3,7 @@ const ToggleButton = () => {
   const [isOn,setIsOn] = useState(false)
   return(
     <>
-     {/* <button onClick={()=> setIsOn(prev =!prev)}> */}
+     {/ <button onClick={()=> setIsOn(prev =!prev)}> /}
      <button onClick={() => setIsOn((prev) => !prev)}>
       {isOn?"ON":"OFF"}
      </button>

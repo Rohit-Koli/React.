@@ -7,8 +7,8 @@ const Counter = () => {
       <h3>Count : {count}</h3>
       <h3><button type="button" onClick={()=> setCount(count+1)}>Increment</button></h3>
       <h3><button type="button" onClick={()=> setCount(count-1)}>Decrement</button></h3>
-      <h3><button type="button" onClick={()=> setCount(count*2)}>Double</button></h3>
-      <h3><button type="button" onClick={()=> setCount(count*3)}>Triple</button></h3>
+      <h3><button type="button" onClick={()=> setCount(count2)}>Double</button></h3>
+      <h3><button type="button" onClick={()=> setCount(count3)}>Triple</button></h3>
     </div>
   )
 }

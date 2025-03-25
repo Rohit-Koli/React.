@@ -1,7 +1,7 @@
 import React from 'react'
 const ShoppingCard = ({shoppingItemsList}) => {
 let grandTOtal=shoppingItemsList.reduce((total,product)=>{
-    return total+=product.price * product.quantity
+    return total+=product.price  product.quantity
 },0)
   return (
     <div>
@@ -9,7 +9,7 @@ let grandTOtal=shoppingItemsList.reduce((total,product)=>{
         <ul>
         {shoppingItemsList.map((product,index)=>(
             <li key={index}>
-                <h3>{index+1} . {product.name} - {product.price} X {product.quantity} = {product.price*product.quantity}</h3>
+                <h3>{index+1} . {product.name} - {product.price} X {product.quantity} = {product.priceproduct.quantity}</h3>
             </li>
         ))}        
         </ul>

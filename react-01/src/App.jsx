@@ -72,62 +72,62 @@ function App() {
   }
   return (
     <>
-      {/* <FunctionComponent /> */}
-      {/* //String Should be in double quote and INteger shouildf be in { } this ! */}
-      {/* <Welcome name="Rohit" age={34}/> */}
-      {/* <UserCard name="John Doe" age={34} location="Washington DC"/> */}
-      {/* <WelcomeMessage username="John Wick " /> */}
-      {/* <WelcomeMessage /> */}
-      {/* <UserStatus isLoggedIn={true} /> */}
-      {/* <UserStatus isLoggedIn={false} /> */}
-      {/* <Product name="XIOMI" price={32000} inStock={true} /> */}
-      {/* <Product name="APPLE" price={42000} inStock={false} /> */}
-      {/* <ThemeButton isDarkMode={true}/> */}
-      {/* <ThemeButton isDarkMode={false}/> */}
-      {/* <ProfileCard name={"John Doe"} bio={"dev"} isOnline={true}/> */}
-      {/* <ProfileCard name={"John Doe"} bio={"dev"} isOnline={false}/> */}
-      {/* <Notification type={"Warning"} message={"Data saved successfully!"} timestamp={"[12:30 PM]"} /> */}
-      {/* <Notification type={"Success"} message={"Low disk space!"} timestamp={"[12:40 PM]"} /> */}
-      {/* <Notification type={"Error"} message={"Failed to load data!"} timestamp={"[12:35 PM]"} /> */}
-      {/* <UserDetails users={usersData} />       */}
+      {/ <FunctionComponent /> /}
+      {/ //String Should be in double quote and INteger shouildf be in { } this ! /}
+      {/ <Welcome name="Rohit" age={34}/> /}
+      {/ <UserCard name="John Doe" age={34} location="Washington DC"/> /}
+      {/ <WelcomeMessage username="John Wick " /> /}
+      {/ <WelcomeMessage /> /}
+      {/ <UserStatus isLoggedIn={true} /> /}
+      {/ <UserStatus isLoggedIn={false} /> /}
+      {/ <Product name="XIOMI" price={32000} inStock={true} /> /}
+      {/ <Product name="APPLE" price={42000} inStock={false} /> /}
+      {/ <ThemeButton isDarkMode={true}/> /}
+      {/ <ThemeButton isDarkMode={false}/> /}
+      {/ <ProfileCard name={"John Doe"} bio={"dev"} isOnline={true}/> /}
+      {/ <ProfileCard name={"John Doe"} bio={"dev"} isOnline={false}/> /}
+      {/ <Notification type={"Warning"} message={"Data saved successfully!"} timestamp={"[12:30 PM]"} /> /}
+      {/ <Notification type={"Success"} message={"Low disk space!"} timestamp={"[12:40 PM]"} /> /}
+      {/ <Notification type={"Error"} message={"Failed to load data!"} timestamp={"[12:35 PM]"} /> /}
+      {/ <UserDetails users={usersData} />       /}
 
-      {/* {Failed Tasks Below:} */}
-      {/* <PricingPlan planName={"Business Plan"} price={19.99} fetures={features[1]} /> */}
-      {/* <PricingPlan planName={"Premium Plan"} price={29.99} fetures={features[0]} /> */}
+      {/ {Failed Tasks Below:} /}
+      {/ <PricingPlan planName={"Business Plan"} price={19.99} fetures={features[1]} /> /}
+      {/ <PricingPlan planName={"Premium Plan"} price={29.99} fetures={features[0]} /> /}
 
-      {/* <TaskList tasks={taskList}/> */}
-      {/* <DynamicWeatherCard city={"Mumbai"} conditions={weatherCondition[0]} temprature={32}/> */}
-      {/* <DynamicWeatherCard city={"Delhi"} conditions={weatherCondition[2]} temprature={26}/> */}
-      {/* <DynamicWeatherCard city={"Shirpur"} conditions={weatherCondition[1]} temprature={18}/> */}
-      {/* <ProductReviewComponent productName={"IPHONE 15"} rating={4} review={"Good Electronic Device "}/> */}
-      {/* <ProductReviewComponent productName={"IPHONE 14"} rating={5} review={"Good Electronic Device "}/> */}
-      {/* <ProductReviewComponent productName={"IPHONE 13"} rating={1} review={"Good Electronic Device "}/> */}
-      {/* <ProductReviewComponent productName={"IPHONE 12"} rating={2} review={"Good Electronic Device4"}/> */}
-      {/* <ProductReviewComponent productName={"IPHONE X"} rating={3} review={"Good Electronic Device4"}/> */}
-      {/* <MovieRatingComponent movieName={"Inception"} rating={9} genre={"Sci-Fi"}/> */}
-      {/* <MovieRatingComponent movieName={"Titanic"} rating={8} genre={"Romance"}/> */}
-      {/* <MovieRatingComponent movieName={"Joker"} rating={9.5} genre={"Drama"}/> */}
-      {/* <ShoppingCard shoppingItemsList={shopingItemsList}/> */}
-      {/* Day 01 All Tasks Completed !!! */}
+      {/ <TaskList tasks={taskList}/> /}
+      {/ <DynamicWeatherCard city={"Mumbai"} conditions={weatherCondition[0]} temprature={32}/> /}
+      {/ <DynamicWeatherCard city={"Delhi"} conditions={weatherCondition[2]} temprature={26}/> /}
+      {/ <DynamicWeatherCard city={"Shirpur"} conditions={weatherCondition[1]} temprature={18}/> /}
+      {/ <ProductReviewComponent productName={"IPHONE 15"} rating={4} review={"Good Electronic Device "}/> /}
+      {/ <ProductReviewComponent productName={"IPHONE 14"} rating={5} review={"Good Electronic Device "}/> /}
+      {/ <ProductReviewComponent productName={"IPHONE 13"} rating={1} review={"Good Electronic Device "}/> /}
+      {/ <ProductReviewComponent productName={"IPHONE 12"} rating={2} review={"Good Electronic Device4"}/> /}
+      {/ <ProductReviewComponent productName={"IPHONE X"} rating={3} review={"Good Electronic Device4"}/> /}
+      {/ <MovieRatingComponent movieName={"Inception"} rating={9} genre={"Sci-Fi"}/> /}
+      {/ <MovieRatingComponent movieName={"Titanic"} rating={8} genre={"Romance"}/> /}
+      {/ <MovieRatingComponent movieName={"Joker"} rating={9.5} genre={"Drama"}/> /}
+      {/ <ShoppingCard shoppingItemsList={shopingItemsList}/> /}
+      {/ Day 01 All Tasks Completed !!! /}
 
-      {/* Day 02 */}
-      {/* <Counter /> */}
-      {/* <ButtonClick /> */}
-      {/* <InputField /> */}
-      {/* <FormSubmit /> */}
-      {/* <ToggleButton /> */}
-      {/* <TextCounter /> */}
-      {/* <LoginForm /> */}
-      {/* <AdvancedCounter /> */}
-      {/* <FormValidation /> */}
-      {/* <RealTimeCharacterCounter /> */}
+      {/ Day 02 /}
+      {/ <Counter /> /}
+      {/ <ButtonClick /> /}
+      {/ <InputField /> /}
+      {/ <FormSubmit /> /}
+      {/ <ToggleButton /> /}
+      {/ <TextCounter /> /}
+      {/ <LoginForm /> /}
+      {/ <AdvancedCounter /> /}
+      {/ <FormValidation /> /}
+      {/ <RealTimeCharacterCounter /> /}
       
-      {/* Day 03 */}
-      {/* <UseEffectDemo /> */}
+      {/ Day 03 /}
+      {/ <UseEffectDemo /> /}
 
-      {/* <ItemPortal.Provider value={items}>
+      {/ <ItemPortal.Provider value={items}>
           <Kitchen />
-      </ItemPortal.Provider> */}
+      </ItemPortal.Provider> /}
 
       <NameContext.Provider value={rohitInfo}>
         <RohitInfo />
